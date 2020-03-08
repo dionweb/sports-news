@@ -12,7 +12,7 @@ module.exports = function (api) {
     const {
       data
     } = await axios.get(`
-      http://newsapi.org/v2/top-headlines?country=de&category=sports&apiKey=${process.env.GRIDSOME_NEWS_API_KEY}`)
+      http://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=${process.env.GRIDSOME_NEWS_API_KEY}`)
     const collection = actions.addCollection({
       typeName: 'Posts'
     })

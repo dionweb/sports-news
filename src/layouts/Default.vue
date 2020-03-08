@@ -1,15 +1,15 @@
 <template>
-  <div class="layout">
-    <header class="header">
+  <div class="leading- m-0 p-0">
+    <nav class="flex items-center justify-between flex-wrap bg-blue-500 p-6 mb-5 md:px-12">
       <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        <g-link class="text-white text-lg font-medium" to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
-      <nav class="nav">
+      <nav class="nav text-white font-medium">
         <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link ml-5" to="/news/">News</g-link>
       </nav>
-    </header>
-    <slot/>
+    </nav>
+    <slot />
   </div>
 </template>
 
@@ -23,28 +23,7 @@ query {
 
 <style>
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 </style>
