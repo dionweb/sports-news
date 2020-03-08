@@ -5,12 +5,32 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const axios = require('axios')
+
 module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+  api.loadSource(async actions => {
+    const {
+      data
+    } = await axios.get(`
+      http://newsapi.org/v2/top-headlines?country=de&category=sports&apiKey=${process.env.GRIDSOME_NEWS_API_KEY}`)
+    const collection = actions.addCollection({
+      typeName: 'Posts'
+    })
+
+    for (const item of data.articles) {
+      collection.addNode({
+        title: item.title,
+        description: item.description,
+        urlToImage: item.urlToImage,
+        url: item.url
+      })
+    }
   })
 
-  api.createPages(({ createPage }) => {
+
+  api.createPages(({
+    createPage
+  }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
   })
 }
