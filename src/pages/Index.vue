@@ -25,7 +25,7 @@
           >Show news</g-link>
         </div>
       </div>
-      <div>
+      <div class="hidden md:block">
         <g-image src="~/assets/images/undraw_newspaper.svg" class="mt-8 mx-auto w-40 md:w-64" />
       </div>
     </div>
@@ -151,6 +151,12 @@ export default {
 <style>
 .showcase {
   height: calc(100vh - 339px);
+}
+
+@media screen and (max-width: 768px) {
+  .showcase {
+    height: unset;
+  }
 }
 
 .newsletter,
