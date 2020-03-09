@@ -10,6 +10,11 @@
       </nav>
     </nav>
     <slot />
+    <footer class="mt-20 p-10 bg-blue-500">
+      <div class="flex justify-center">
+        <p class="text-white">Copyright © 2020 Sports News.</p>
+      </div>
+    </footer>
   </div>
 </template>
 

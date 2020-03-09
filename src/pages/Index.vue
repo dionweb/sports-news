@@ -1,7 +1,7 @@
 <template>
-  <Layout>
+  <Layout class="bg-blue-100">
     <div
-      class="text-center md:text-left md:flex justify-around items-center mt-20 container mx-auto px-4"
+      class="showcase text-center md:text-left md:flex justify-around items-center mt-20 container mx-auto px-4"
     >
       <div>
         <h1 class="font-medium text-3xl text-blue-900">
@@ -16,16 +16,16 @@
         </h2>
         <div class="inline-flex mt-4">
           <g-link
-            class="duration-500 text-base cursor-pointer rounded-md shadow bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-          >About us</g-link>
+            class="duration-500 text-base cursor-pointer rounded-md shadow bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded border-none"
+          >Credits</g-link>
           <g-link
-            class="duration-500 ml-4 text-base rounded-md shadow bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+            class="duration-500 ml-4 text-base rounded-md shadow bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 border border-blue-500 hover:border-transparent rounded border-none"
             to="/news/"
           >Show news</g-link>
         </div>
       </div>
-      <div class="hidden md:block">
-        <g-image src="~/assets/images/undraw_newspaper.svg" class="max-w-xs" />
+      <div>
+        <g-image src="~/assets/images/undraw_newspaper.svg" class="mt-8 mx-auto w-40 md:w-64" />
       </div>
     </div>
   </Layout>
@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
+.showcase {
+  height: calc(100vh - 339px);
 }
 </style>
