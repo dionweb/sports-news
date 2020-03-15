@@ -9,13 +9,23 @@
         <div
           v-for="edge in $page.allPosts.edges"
           :key="edge.node.title"
-          class="max-w-sm rounded overflow-hidden shadow-lg mb-8 mx-auto"
+          class="relative max-w-sm rounded-md rounded-tl-none overflow-hidden shadow-lg mb-8 mx-auto"
         >
-          <g-image class="w-full" v-bind:src="edge.node.urlToImage" alt="Article image" />
+          <g-image
+            class="w-full h-56 text-center"
+            v-bind:src="edge.node.urlToImage"
+            alt="Article image"
+          />
           <div class="px-6 py-4">
             <div v-html="edge.node.title" class="font-medium text-lg text-blue-900 mb-2"></div>
             <p v-html="edge.node.description" class="font-light text-blue-900 text-base mb-4"></p>
           </div>
+
+          <a
+            v-bind:href="edge.node.url"
+            target="_blank"
+            class="duration-500 outline-none absolute top-0 left-0 bg-blue-500 hover:bg-blue-700 text-gray-100 hover:text-white rounded-br-lg px-3 py-2 text-md font-semibold"
+          >Go to source</a>
         </div>
       </div>
       <Pager class="mb-12 mt-8" :info="$page.allPosts.pageInfo" />
