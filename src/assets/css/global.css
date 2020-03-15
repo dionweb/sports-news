@@ -7,12 +7,16 @@
 }
 
 *[role="navigation"]>a {
-    font-size: 1.25rem;
-    padding: 8px 10px;
+    font-size: 1.10rem;
+    padding: 8px 15px;
     outline: 0;
+    border-radius: 30px;
+    background: #F7FAFC;
+    margin: 0 4px 0 4px;
 }
 
 *[role="navigation"] a.active {
-    color: #4299E1;
+    background-color: #4299E1;
+    color: #F7FAFC;
     font-weight: bold;
 }

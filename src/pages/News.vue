@@ -18,7 +18,7 @@
           </div>
         </div>
       </div>
-      <Pager :info="$page.allPosts.pageInfo" />
+      <Pager class="mb-12 mt-8" :info="$page.allPosts.pageInfo" />
     </div>
   </Layout>
 </template>
