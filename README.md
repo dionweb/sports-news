@@ -1,14 +1,55 @@
-# Default starter for Gridsome
+# US Sport News
 
-This is the project you get when you run `gridsome create new-project`.
+This website provides the latest US sports news using Gridsome and News API.
 
-### 1. Install Gridsome CLI tool if you don't have
+## Run locally
 
-`npm install --global @gridsome/cli`
+```
+git clone https://github.com/dionweb/sports-news.git
+cd sports-news
+npm install
 
-### 2. Create a Gridsome project
+# Create .env file and put your API key.
+# GRIDSOME_NEWS_API_KEY=
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+npm run develop
+```
+
+## Built With
+
+-  Gridsome
+-  News API
+-  Tailwind CSS
+
+## Authors
+
+-  **Tsentidis Dionysios** - _[DionWeb](https://dionweb.me/)_
+
+## License
+
+MIT License
+
+Copyright (c) 2020-2021 DionWeb
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Links
+
+-  [Live Preview](https://dionweb.github.io/sports-news/)
+-  [DionWeb](https://dionweb.me/)
